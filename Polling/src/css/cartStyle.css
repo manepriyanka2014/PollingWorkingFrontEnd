@@ -1,0 +1,358 @@
+.main-container {
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+.home {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #9D9D9D;
+    cursor: pointer;
+}
+
+.cart {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.title {
+    font-family: Roboto;
+    font-size: 21px;
+    margin-left: 20px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.title2 {
+    font-family: Roboto;
+    font-size: 21px;
+    margin-left: -8px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.bookimg {
+    top: 192px;
+    left: 213px;
+    width: 65px;
+    height: 90px;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DBDBDB;
+}
+
+.square {
+    width: 41px;
+    height: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DBDBDB;
+    border-radius: 1px;
+}
+
+.dropdown {
+    margin-left: 490px;
+    margin-top: -32px;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px;
+}
+
+.dropbtn {
+    width: 258px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.icon {
+    color: rgb(121, 4, 4);
+}
+
+.book1 {
+    margin-top: 3px;
+    margin-left: 43px;
+}
+
+.info {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: fit-content;
+}
+
+.buttons {
+    margin-left: 100px;
+    margin-top: 35px;
+}
+
+.booktitle {
+    font-family: Roboto;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+    display: flex;
+    margin-left: 96px;
+    margin-top: -90px;
+    word-wrap: break-word;
+}
+
+.sub {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #9d9d9d;
+    opacity: 1;
+    margin-top: 10px;
+    margin-left: 97px;
+    word-wrap: break-word;
+}
+
+.price {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 97px;
+    word-wrap: break-word;
+}
+
+.marked {
+    font-family: Roboto;
+    font-size: 15px;
+    color: #9D9D9D;
+    margin-left: 80px;
+    margin-top: -20px;
+}
+
+.remove {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.input-row2 {
+    margin-top: -90px;
+    margin-left: 263px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.label {
+    font-family: ROBOTO;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 1px;
+    opacity: 1;
+}
+
+.input2 {
+    border-color: #b4b4b4;
+    border-width: 1px;
+    height: 70px;
+    width: 511px;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+    border-style: solid;
+}
+
+.cart-input {
+    border-color: #b4b4b4;
+    border-width: 1px;
+    height: 45px;
+    width: 250px;
+    border: 1px solid #E2E2E2;
+    border-radius: 2px;
+    opacity: 1;
+    border-style: solid;
+    margin-right: 20px;
+}
+
+.type {
+    margin-top: 23px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.radio1 {
+    margin-top: 30px;
+}
+
+.homes {
+    font-size: 16px;
+    font-family: Roboto;
+    display: inline-block;
+}
+
+.radio2 {
+    margin-top: 28px;
+    margin-left: 92px;
+}
+
+.work {
+    font-size: 16px;
+    font-family: Roboto;
+    display: inline-block;
+}
+
+.radio3 {
+    margin-top: -20px;
+    margin-left: 250px;
+}
+
+.other {
+    font-size: 16px;
+    font-family: Roboto;
+    display: inline-block;
+}
+
+.button2 {
+    border: none;
+    margin-left: 550px;
+    display: flexbox;
+    border-radius: 2px;
+    opacity: 1;
+    margin-bottom: 10px;
+    font-size: 10px;
+    width: 151px;
+    margin-top: -5px;
+    height: 35px;
+    background-color: #3371B5;
+    border-color: #3371B5;
+    color: white;
+    color: #ffffff;
+    background-color: #3371B5;
+    border: none;
+    height: 30px;
+    width: 111px;
+    border-radius: 2px;
+    font-family: Roboto;
+}
+
+
+.forcard{
+    margin-top: 10px;
+    width: 782px;
+    background: rgb(255, 255, 255) 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px;
+    font-family: Roboto;
+    font-weight: 400;
+
+}
+
+.place-order{
+    margin-left: 314px;
+    color: #ffffff;
+    background-color: #3371B5;
+    border: none;
+    height: 30px;
+    width: 111px;
+    border-radius: 2px;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.continue{
+    color: #ffffff;
+    background-color: #3371B5;
+    border: none;
+    height: 30px;
+    width: 111px;
+    border-radius: 2px;
+    margin: 10px;
+}
+.checkout{
+    margin-left: 535px;
+    color: #ffffff;
+    background-color: #3371B5;
+    border: none;
+    height: 30px;
+    width: 111px;
+    border-radius: 2px;
+}
+
+.edit {
+    margin-right: 15px;
+    font-size: 13px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: rgb(155, 4, 4);
+}
+
+.items-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-view{
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-card {
+    margin-top: 10px;
+    margin-left: 275px;
+    background: hsl(0, 0%, 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDCDC;
+    border-radius: 1px;
+    padding: 15px;
+    width: 46em;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.margin-right-30{
+ margin-right: 30px;
+}
+
+div.vote-options {
+    display: table;
+    width: 80%;
+    table-layout: fixed;
+    font-size:12px
+}
+div.vote-options label {
+    display: table-cell;
+    text-align: left;
+}
+
+div.vote-options meter {
+    display: table-cell;
+    text-align: left;
+}

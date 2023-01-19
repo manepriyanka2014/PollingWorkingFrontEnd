@@ -1,0 +1,28 @@
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+</div>
+<div class="cart-card">
+    <div>
+        <h2 > Question : {{ctrl.questionDetails.question}} </h2><br>
+        <hr />
+        <div ng-repeat="option in ctrl.questionDetails.options">
+            </br>
+            {{option.optionCode}}: <input type="radio" ng-change='ctrl.checkIfAlreadyVoted()' name="option" ng-model="ctrl.selectedVal" ng-value="option.optionCode"/> {{option.optionName}}<br/>
+            <br>
+        </div>
+        <!--    A:-->
+        <!--    <input type="radio" id="option1" name="option" value="A" ng-model="ctrl.selectedVal"/> Brazil<br/>-->
+        <!--    <br>-->
+
+        <!--    B:-->
+        <!--    <input type="radio" id="option2" name="option" value="B" ng-model="ctrl.selectedVal"/> Argentina<br/>-->
+        <!--    <br>-->
+
+        <!--    C:-->
+        <!--    <input type="radio" id="option3" name="option" value="C" ng-model="ctrl.selectedVal"/> France<br/>-->
+        <button class="continue" ng-disabled="ctrl.isAlreadyVoted" ng-click="ctrl.addVote()"> Submit </button>
+         <button class="continue" ng-click="ctrl.redirectToLoginPage()"> Back </button>
+
+<!--        <button class="continue" ng-click="ctrl.redirectToShowVotePage()"> Show Vote </button>-->
+    </div>
+</div>

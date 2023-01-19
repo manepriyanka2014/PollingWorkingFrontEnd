@@ -1,0 +1,93 @@
+
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</div>
+<div class="cart-card">
+    <div class="info">
+        <span class="title2">Add Poll User Information</span>
+        <hr />
+
+        <div class="input-row">
+            <label class="label1">userName</label>
+            <input class="cart-input" ng-model="ctrl.userDetails.userName" type="text"
+                   placeholder="Add user name" required>
+        </div>
+
+        <div class="input-row">
+            <label class="label1"> email </label>
+            <input class="cart-input" ng-model="ctrl.userDetails.email" type="email"
+                   placeholder="Enter email" required>
+        </div>
+
+        <div class="input-row">
+            <label class="label1"> password </label>
+            <input class="cart-input" ng-model="ctrl.userDetails.password" type="password"
+                   placeholder="Enter password" required>
+        </div>
+
+        <!--        <div class="input-row">-->
+        <!--            <label class="label1"> Vote  </label>-->
+        <!--            <input class="cart-input" ng-model="ctrl.userDetails.vote" type="text"-->
+        <!--                   placeholder="Enter option " required>-->
+        <!--        </div>-->
+        <!--              <br>-->
+        <!--        <div class="input-row">-->
+        <!--            <h2> Question : Who will win FIFA world cup ? </h2>-->
+        <!--          -->
+        <!--            <input type="radio" name="brazil" value="brazil"> A. Brazil-->
+        <!--            <input type="radio" name="argentina" value="argentina"> B. Argentina-->
+        <!--            <input type="radio" name="france" value="france"> C. France-->
+        <!--        </div>-->
+
+        <!--          <h2> Question : Who will win FIFA world cup ? </h2><br>-->
+
+        <!--            Option A:-->
+        <!--            <input type="radio" id="option1" name="option" value="brazil"/> Brazil<br/>-->
+        <!--            <br>-->
+
+        <!--            Option B:-->
+        <!--            <input type="radio" id="option2" name="option" value="argentina"/> Argentina<br/>-->
+        <!--            <br>-->
+        <!--            Option C:-->
+        <!--            <input type="radio" id="option3" name="option" value="france"/> France<br/>-->
+
+        <h3><button class="continue" ng-click="ctrl.addPollUser()"> Add </button> </h3>
+        <h3> <button class="continue" ng-click="ctrl.redirectToAdminPage()"> Back </button> </h3>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <span class="title2">User Details</span>
+    <hr />
+    <table border="1" class="table table-striped tab+le-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th>User Name</th>
+            <th>Email </th>
+            <th>Password</th>
+
+            <!--            <th> vote </th>-->
+            <th>Delete </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="userDetails in ctrl.userList">
+            <td>{{userDetails.userName}}</td>
+            <td>{{userDetails.email}}</td>
+            <td>{{userDetails.password}}</td>
+
+            <!--            <td>{{userDetails.vote}}</td>-->
+            <td><button class="add-to-cart-button" ng-click="ctrl.deleteUser(userDetails.userId)">
+                Delete
+            </button></td>
+        </tr>
+        </tbody>
+    </table>
+    <!--    <p align="right">-->
+    <!--        <button class="continue" ng-click="ctrl.redirectToAddEventPage()" > Add New Event </button>-->
+    <!--    </p>-->
+
+</div>
+</div>

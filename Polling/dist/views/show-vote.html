@@ -1,0 +1,23 @@
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<div class="cart-card">
+    <div>
+        <h2 > Question : {{ctrl.questionDetails.question}} </h2><br>
+        <hr/>
+        <div ng-repeat="option in ctrl.questionDetails.options">
+            </br>
+            <div class="vote-options">
+                <label> {{option.optionCode}} : {{option.optionName}} </label>
+                <meter min="0" max="100" ng-value="option.votePercentage" title="Vote Count">{{option.votePercentage}}</meter> {{option.votePercentage}}%
+            </div>
+            <!--        <h4><label style="text-align:justify"> {{option.optionCode}} : {{option.optionName}} </label> <meter min="0" max="100" ng-value="option.votePercentage" title="Vote Count">{{option.votePercentage}}</meter>{{option.votePercentage}}%</h4>-->
+            <!--        <br>-->
+        </div>
+    </div>
+</div>
+<div class="cart-card">
+<!--    <h3> <button class="continue" ng-click="ctrl.redirectToAddNewUserPage()"> AddNewUser </button> </h3>-->
+<!--    <h3> <button class="continue" ng-click="ctrl.redirectToAddQuestionPage()"> AddQuestion </button></h3>-->
+<!--    <h3> <button class="continue" ng-click="ctrl.redirectToDeleteQuestionPage()"> DeleteQuestion </button></h3>-->
+    <h3> <button class="continue" ng-click="ctrl.redirectToAdminPage()"> Back </button> </h3>
+</div>

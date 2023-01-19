@@ -1,0 +1,53 @@
+
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<div class="cart-card">
+    <div class="info">
+        <span class="title2">Add Question Information</span>
+        <hr />
+        <div class="input-row">
+            <label class="label1">Question</label>
+            <input class="cart-input" ng-model="ctrl.questionDetails.question" type="text"
+                   placeholder="Add question" required>
+        </div>
+        <br/>
+        <h5> <button class="continue" ng-click="ctrl.addOption()"> Add Options </button> </h5>
+        <div ng-repeat="option in ctrl.questionDetails.options">
+            </br>
+            {{option.optionCode}}: <input type="text" ng-model="option.optionName">
+            <input type="button" ng-click="ctrl.removeOption(option)" value="Remove Option">
+        </div>
+        <br/>
+        <br/>
+        <!--        <h3> <input type="button" ng-click="ctrl.addQuestion()" value="Add Question"></h3>-->
+        <h4> <button class="continue" ng-click="ctrl.addQuestion()"> Add Question </button> </h4>
+
+        <h3> <button class="continue" ng-click="ctrl.redirectToAdminPage()"> Back </button> </h3>
+
+    </div>
+</div>
+
+
+<div class="container">
+    <span class="title2">Question Details</span>
+    <hr />
+    <table border="1" class="table table-striped tab+le-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th>Questions</th>
+<!--            <th>Options </th>-->
+            <th>Delete </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="questionDetails in ctrl.questionList">
+            <td>{{questionDetails.question}}</td>
+            <td><button class="add-to-cart-button" ng-click="ctrl.deleteQuestion(questionDetails.questionId)">
+                Delete
+            </button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
